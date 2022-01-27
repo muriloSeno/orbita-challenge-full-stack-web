@@ -30,8 +30,8 @@ namespace GroupA.API.Controllers
         {
             try
             {
-                var product = await _aplicationService.GetAlunoById(id);
-                return Ok(product);
+                var aluno = await _aplicationService.GetAlunoById(id);
+                return Ok(aluno);
             }
             catch (NotFoundException)
             {
@@ -42,8 +42,8 @@ namespace GroupA.API.Controllers
         [HttpPost]
         public async Task<ActionResult> Create([FromBody] CreateAlunoRequest request)
         {
-            var product = await _aplicationService.CreateAluno(request);
-            return Ok(product);
+            var aluno = await _aplicationService.CreateAluno(request);
+            return Ok(aluno);
         }
 
         [HttpPut("{id}")]
@@ -51,8 +51,8 @@ namespace GroupA.API.Controllers
         {
             try
             {
-                var product = await _aplicationService.UpdateAluno(id, request);
-                return Ok(product);
+                var aluno = await _aplicationService.UpdateAluno(id, request);
+                return Ok(aluno);
             }
             catch (NotFoundException)
             {

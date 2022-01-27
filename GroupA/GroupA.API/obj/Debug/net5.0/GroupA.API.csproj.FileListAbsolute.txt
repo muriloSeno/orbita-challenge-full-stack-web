@@ -31,3 +31,15 @@ D:\Estudo\Teste\GroupA\GroupA.API\bin\Debug\net5.0\GroupA.Application.dll
 D:\Estudo\Teste\GroupA\GroupA.API\bin\Debug\net5.0\GroupA.Domain.dll
 D:\Estudo\Teste\GroupA\GroupA.API\bin\Debug\net5.0\GroupA.Application.pdb
 D:\Estudo\Teste\GroupA\GroupA.API\bin\Debug\net5.0\GroupA.Domain.pdb
+D:\Estudo\Teste\GroupA\GroupA.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\Estudo\Teste\GroupA\GroupA.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Estudo\Teste\GroupA\GroupA.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Estudo\Teste\GroupA\GroupA.API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Estudo\Teste\GroupA\GroupA.API\bin\Debug\net5.0\Npgsql.dll
+D:\Estudo\Teste\GroupA\GroupA.API\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\Estudo\Teste\GroupA\GroupA.API\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\Estudo\Teste\GroupA\GroupA.API\bin\Debug\net5.0\GroupA.Infrastructure.dll
+D:\Estudo\Teste\GroupA\GroupA.API\bin\Debug\net5.0\GroupA.Infrastructure.pdb
+D:\Estudo\Teste\GroupA\GroupA.API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Estudo\Teste\GroupA\GroupA.API\bin\Debug\net5.0\Humanizer.dll
+D:\Estudo\Teste\GroupA\GroupA.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
