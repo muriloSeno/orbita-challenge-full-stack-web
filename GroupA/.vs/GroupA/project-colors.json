@@ -1,5 +1,46 @@
 {
   "Version": 1,
-  "ProjectMap": {},
-  "NextColorIndex": 0
+  "ProjectMap": {
+    "36bf1222-b860-47b0-a1e6-734740770cc2": {
+      "ProjectGuid": "36bf1222-b860-47b0-a1e6-734740770cc2",
+      "DisplayName": "groupa.frontend",
+      "ColorIndex": 0
+    },
+    "4858c08e-b353-4b9f-b89a-c55d8e32e9d6": {
+      "ProjectGuid": "4858c08e-b353-4b9f-b89a-c55d8e32e9d6",
+      "DisplayName": "GroupA.API",
+      "ColorIndex": 1
+    },
+    "76b4fb9e-03ba-4d36-8b04-9e728089451e": {
+      "ProjectGuid": "76b4fb9e-03ba-4d36-8b04-9e728089451e",
+      "DisplayName": "docker-compose",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "561b4332-4968-497c-b2d3-802d5bac3e77": {
+      "ProjectGuid": "561b4332-4968-497c-b2d3-802d5bac3e77",
+      "DisplayName": "GroupA.Application",
+      "ColorIndex": 3
+    },
+    "c9483aeb-491f-4a7d-98e2-84c30e3a4ad0": {
+      "ProjectGuid": "c9483aeb-491f-4a7d-98e2-84c30e3a4ad0",
+      "DisplayName": "GroupA.Domain",
+      "ColorIndex": 4
+    },
+    "4e917918-693a-4522-970a-09a17a4fc1be": {
+      "ProjectGuid": "4e917918-693a-4522-970a-09a17a4fc1be",
+      "DisplayName": "GroupA.Infrastructure",
+      "ColorIndex": 5
+    },
+    "c54db85c-5b2b-4418-8c24-e3e2913c6dad": {
+      "ProjectGuid": "c54db85c-5b2b-4418-8c24-e3e2913c6dad",
+      "DisplayName": "GroupA.Tests",
+      "ColorIndex": 6
+    }
+  },
+  "NextColorIndex": 7
 }

@@ -4,11 +4,17 @@
     <TargetFramework>net5.0</TargetFramework>
     <UserSecretsId>0f5c581a-0da1-4b64-a026-1cfe357ca8fa</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.11.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GroupA.Application\GroupA.Application.csproj" />
+    <ProjectReference Include="..\GroupA.Infrastructure\GroupA.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

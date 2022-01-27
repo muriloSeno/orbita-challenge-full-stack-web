@@ -1,3 +1,4 @@
+using GroupA.Infrastructure;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -32,6 +33,8 @@ namespace GroupA.API
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "GroupA.API", Version = "v1" });
             });
+
+            services.RegisterInfrastructureServices(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -11,7 +11,6 @@ D:\Estudo\Teste\GroupA\GroupA.API\bin\Debug\net5.0\Microsoft.OpenApi.dll
 D:\Estudo\Teste\GroupA\GroupA.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Estudo\Teste\GroupA\GroupA.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Estudo\Teste\GroupA\GroupA.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\Estudo\Teste\GroupA\GroupA.API\obj\Debug\net5.0\GroupA.API.csproj.AssemblyReference.cache
 D:\Estudo\Teste\GroupA\GroupA.API\obj\Debug\net5.0\GroupA.API.GeneratedMSBuildEditorConfig.editorconfig
 D:\Estudo\Teste\GroupA\GroupA.API\obj\Debug\net5.0\GroupA.API.AssemblyInfoInputs.cache
 D:\Estudo\Teste\GroupA\GroupA.API\obj\Debug\net5.0\GroupA.API.AssemblyInfo.cs
@@ -26,3 +25,9 @@ D:\Estudo\Teste\GroupA\GroupA.API\obj\Debug\net5.0\GroupA.API.dll
 D:\Estudo\Teste\GroupA\GroupA.API\obj\Debug\net5.0\ref\GroupA.API.dll
 D:\Estudo\Teste\GroupA\GroupA.API\obj\Debug\net5.0\GroupA.API.pdb
 D:\Estudo\Teste\GroupA\GroupA.API\obj\Debug\net5.0\GroupA.API.genruntimeconfig.cache
+D:\Estudo\Teste\GroupA\GroupA.API\obj\Debug\net5.0\GroupA.API.csproj.AssemblyReference.cache
+D:\Estudo\Teste\GroupA\GroupA.API\bin\Debug\net5.0\AutoMapper.dll
+D:\Estudo\Teste\GroupA\GroupA.API\bin\Debug\net5.0\GroupA.Application.dll
+D:\Estudo\Teste\GroupA\GroupA.API\bin\Debug\net5.0\GroupA.Domain.dll
+D:\Estudo\Teste\GroupA\GroupA.API\bin\Debug\net5.0\GroupA.Application.pdb
+D:\Estudo\Teste\GroupA\GroupA.API\bin\Debug\net5.0\GroupA.Domain.pdb

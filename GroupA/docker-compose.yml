@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  groupadb:
+    image: postgres
+
+  groupa.api:
+    image: ${DOCKER_REGISTRY-}groupaapi
+    build:
+      context: .
+      dockerfile: GroupA.API/Dockerfile
+
+volumes:
+  postgres_data:
