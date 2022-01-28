@@ -17,7 +17,7 @@ namespace GroupA.Application.DTOs.Requests
         public string Email { get; set; }
 
         [Required]
-        public string Ra { get; set; }
+        public int Ra { get; set; }
 
         [Required]
         public string Cpf { get; set; }

@@ -21,8 +21,10 @@ namespace GroupA.Infrastructure.Migrations
 
             modelBuilder.Entity("GroupA.Domain.Entities.Aluno", b =>
                 {
-                    b.Property<string>("Ra")
-                        .HasColumnType("text");
+                    b.Property<int>("Ra")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<string>("Cpf")
                         .HasColumnType("text");
@@ -48,6 +50,18 @@ namespace GroupA.Infrastructure.Migrations
                     b.HasKey("Ra");
 
                     b.ToTable("Alunos");
+
+                    b.HasData(
+                        new
+                        {
+                            Ra = 101235,
+                            Cpf = "12304877782",
+                            CreatedAt = new DateTime(2022, 1, 28, 9, 51, 23, 215, DateTimeKind.Local).AddTicks(9667),
+                            Email = "Email.Teste@gmail.com",
+                            Id = 0,
+                            Name = "Murilo Seno Gomes",
+                            UpdatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                        });
                 });
 #pragma warning restore 612, 618
         }

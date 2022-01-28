@@ -25,6 +25,7 @@ namespace GroupA.Infrastructure
                         options.EnableRetryOnFailure();
                     });
             });
+            services.AddScoped<SqlDbContext>();
             services.AddScoped<IAlunoRepository, AlunoRepository>();
             return services;
         }

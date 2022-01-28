@@ -18,6 +18,6 @@ namespace GroupA.Application.Interfaces.ApplicationServices
 
         Task<AlunoResponse> CreateAluno(CreateAlunoRequest aluno);
 
-        Task<AlunoResponse> UpdateAluno(int alunoId, CreateAlunoRequest aluno);
+        Task<AlunoResponse> UpdateAluno(int alunoId, CreateAlunoRequest aluno); 
     }
 }

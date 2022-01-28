@@ -18,21 +18,12 @@ namespace GroupA.Application.AutoMapper
                      opt => opt.Ignore()
                  )
                  .ForMember(dest =>
-                     dest.Name,
-                     opt => opt.Ignore()
-                 )
-                 .ForMember(dest =>
-                     dest.Email,
-                     opt => opt.Ignore()
-                 )
-                 .ForMember(dest =>
-                     dest.Ra,
-                     opt => opt.Ignore()
-                 )
+                    dest.CreatedAt,
+                    opt => opt.Ignore()
+                )
                 .ForMember(dest =>
-                     dest.Cpf,
-                     opt => opt.Ignore()
-                 );
+                    dest.UpdatedAt,
+                    opt => opt.Ignore());
 
                 config.CreateMap<Aluno, AlunoResponse>();
             });

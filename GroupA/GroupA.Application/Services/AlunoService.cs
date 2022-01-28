@@ -20,6 +20,8 @@ namespace GroupA.Application.Services
 
         public Task<Aluno> CreateAluno(Aluno aluno)
         {
+            aluno.CreatedAt = DateTime.Now;
+
             return _repository.CreateAluno(aluno);
         }
 

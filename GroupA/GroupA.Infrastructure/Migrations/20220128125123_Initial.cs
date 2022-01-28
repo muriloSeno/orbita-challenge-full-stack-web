@@ -4,7 +4,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace GroupA.Infrastructure.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -12,7 +12,8 @@ namespace GroupA.Infrastructure.Migrations
                 name: "Alunos",
                 columns: table => new
                 {
-                    Ra = table.Column<string>(type: "text", nullable: false),
+                    Ra = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Name = table.Column<string>(type: "character varying(30)", maxLength: 30, nullable: true),
@@ -25,6 +26,11 @@ namespace GroupA.Infrastructure.Migrations
                 {
                     table.PrimaryKey("PK_Alunos", x => x.Ra);
                 });
+
+            migrationBuilder.InsertData(
+                table: "Alunos",
+                columns: new[] { "Ra", "Cpf", "CreatedAt", "Email", "Name", "UpdatedAt" },
+                values: new object[] { 101235, "12304877782", new DateTime(2022, 1, 28, 9, 51, 23, 215, DateTimeKind.Local).AddTicks(9667), "Email.Teste@gmail.com", "Murilo Seno Gomes", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

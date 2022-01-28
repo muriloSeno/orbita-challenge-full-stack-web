@@ -16,7 +16,7 @@ namespace GroupA.Domain.Entities
         public string Name { get; set; }
         public string Email { get; set; }
         [Key]
-        public string Ra { get; set; }
+        public int Ra { get; set; }
         public string Cpf { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
