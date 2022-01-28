@@ -25,7 +25,7 @@ namespace GroupA.API.Controllers
             return Ok(await _aplicationService.GetAlunos());
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("GetAlunoById")]
         public async Task<ActionResult> GetAlunoById([FromQuery] int id)
         {
             try
@@ -46,7 +46,7 @@ namespace GroupA.API.Controllers
             return Ok(aluno);
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("Update")]
         public async Task<ActionResult> Update([FromQuery] int id, [FromBody] CreateAlunoRequest request)
         {
             try
@@ -60,7 +60,7 @@ namespace GroupA.API.Controllers
             }
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("Delete")]
         public async Task<ActionResult> Delete([FromQuery] int id)
         {
             try
