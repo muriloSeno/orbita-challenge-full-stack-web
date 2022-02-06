@@ -2,6 +2,7 @@
 using GroupA.Application.Utils;
 using GroupA.Domain.Entities;
 using GroupA.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,7 +30,7 @@ namespace GroupA.Infrastructure.Repositories
         public async Task DeleteAlunoById(int alunoId)
         {
             var aluno = await _dbContext.Alunos.FindAsync(alunoId);
-            if (aluno == null)
+            if (aluno != null)
             {
                 _dbContext.Alunos.Remove(aluno);
                 await _dbContext.SaveChangesAsync();
