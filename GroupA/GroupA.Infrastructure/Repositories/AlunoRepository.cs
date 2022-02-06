@@ -14,62 +14,75 @@ namespace GroupA.Infrastructure.Repositories
     public class AlunoRepository : IAlunoRepository
     {
         private readonly SqlDbContext _dbContext;
+        protected readonly DbSet<Aluno> DbSet;
 
         public AlunoRepository(SqlDbContext dbContext)
         {
             _dbContext = dbContext;
+            DbSet = dbContext.Set<Aluno>();
         }
 
         public async Task<Aluno> CreateAluno(Aluno aluno)
         {
-            _dbContext.Alunos.Add(aluno);
-            await _dbContext.SaveChangesAsync();
+            await DbSet.AddAsync(aluno);
+            await SaveChanges();
+
             return aluno;
         }
 
         public async Task DeleteAlunoById(int alunoId)
         {
-            var aluno = await _dbContext.Alunos.FindAsync(alunoId);
-            if (aluno != null)
-            {
-                _dbContext.Alunos.Remove(aluno);
-                await _dbContext.SaveChangesAsync();
-            }
-            else throw new NotFoundException();
+            DbSet.Remove(new Aluno { Ra = alunoId });
+            await SaveChanges();
         }
 
         public async Task<Aluno> GetAlunoById(int alunoId)
         {
-            var aluno = await _dbContext.Alunos.FindAsync(alunoId);
-            if (aluno != null)
-            {
-                return aluno;
-            }
-
-            throw new NotFoundException();
+            return await DbSet.AsNoTracking().FirstOrDefaultAsync(e => e.Ra == alunoId);
         }
 
-        public Task<List<Aluno>> GetAlunos()
+        public async Task<List<Aluno>> GetAlunos()
         {
-            return Task.FromResult(_dbContext.Alunos.ToList());
+            try
+            {
+                return await DbSet.ToListAsync();
+            }
+            catch (Exception e)
+            {
+
+                throw;
+            }    
+
+            return await DbSet.ToListAsync();
         }
 
         public async Task<Aluno> UpdateAluno(int alunoId, Aluno alunoUpdate)
         {
-            var aluno = await _dbContext.Alunos.FindAsync(alunoId);
+            var aluno = DbSet.AsNoTracking().FirstOrDefaultAsync(e => e.Ra == alunoId).Result;
+
             if (aluno != null)
             {
                 aluno.Name = alunoUpdate.Name;
                 aluno.Email = alunoUpdate.Email;
                 aluno.UpdatedAt = DateUtil.GetCurrentDate();
 
-                _dbContext.Alunos.Update(aluno);
-                await _dbContext.SaveChangesAsync();
+                DbSet.Update(aluno);
+                await SaveChanges();
 
                 return aluno;
             }
 
             throw new NotFoundException();
+        }
+
+        public async Task<int> SaveChanges()
+        {
+            return await _dbContext.SaveChangesAsync();
+        }
+
+        public void Dispose()
+        {
+            _dbContext?.Dispose();
         }
     }
 }

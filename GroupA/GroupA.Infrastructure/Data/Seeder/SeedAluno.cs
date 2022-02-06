@@ -12,16 +12,26 @@ namespace GroupA.Infrastructure.Data.Seeder
     {
         public void Executar(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Aluno>().HasData(
-               new Aluno 
-               { 
-                   Name = "Murilo Seno Gomes", 
-                   Cpf = "12304877782", 
-                   Ra = 101235, 
-                   Email = "Email.Teste@gmail.com", 
-                   CreatedAt = DateTime.Now 
-               }
-           );
+            try
+            {
+                modelBuilder.Entity<Aluno>().HasData(
+              new Aluno
+              {
+                  Name = "Murilo Seno Gomes",
+                  Cpf = "12304877782",
+                  Ra = 101235,
+                  Email = "Email.Teste@gmail.com",
+                  CreatedAt = DateTime.Now
+              }
+          );
+            }
+            catch (Exception e)
+            {
+
+                throw;
+            }
+
+           
         }
     }
 }

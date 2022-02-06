@@ -22,7 +22,6 @@ namespace GroupA.Infrastructure
                     configuration.GetConnectionString("DefaultConnection"),
                     options => {
                         options.MigrationsAssembly(typeof(SqlDbContext).Assembly.FullName);
-                        options.EnableRetryOnFailure();
                     });
             });
             services.AddScoped<SqlDbContext>();
