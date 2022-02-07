@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroupA.API", "GroupA.API\Gr
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "groupa.frontend", "GroupA.FrontEnd\groupa.frontend.esproj", "{36BF1222-B860-47B0-A1E6-734740770CC2}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{76B4FB9E-03BA-4D36-8B04-9E728089451E}"
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "GroupA.Compose", "GroupA.Compose.dcproj", "{76B4FB9E-03BA-4D36-8B04-9E728089451E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BackEnd", "BackEnd", "{E0306695-B2F7-4F57-A7CD-CCE305C17447}"
 EndProject

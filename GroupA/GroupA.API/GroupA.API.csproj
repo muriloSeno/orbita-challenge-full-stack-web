@@ -4,7 +4,7 @@
     <TargetFramework>net5.0</TargetFramework>
     <UserSecretsId>0f5c581a-0da1-4b64-a026-1cfe357ca8fa</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+    <DockerComposeProjectPath>..\GroupA.Compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
