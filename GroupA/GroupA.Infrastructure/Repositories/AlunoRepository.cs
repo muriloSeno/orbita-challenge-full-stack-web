@@ -43,16 +43,6 @@ namespace GroupA.Infrastructure.Repositories
 
         public async Task<List<Aluno>> GetAlunos()
         {
-            try
-            {
-                return await DbSet.ToListAsync();
-            }
-            catch (Exception e)
-            {
-
-                throw;
-            }    
-
             return await DbSet.ToListAsync();
         }
 

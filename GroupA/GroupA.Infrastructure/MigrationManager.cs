@@ -18,14 +18,7 @@ namespace GroupA.Infrastructure
             {
                 using (var appContext = scope.ServiceProvider.GetRequiredService<SqlDbContext>())
                 {
-                    try
-                    {
-                        appContext.Database.Migrate();
-                    }
-                    catch (Exception e)
-                    {
-                        throw;
-                    }
+                    appContext.Database.Migrate();
                 }
             }
 

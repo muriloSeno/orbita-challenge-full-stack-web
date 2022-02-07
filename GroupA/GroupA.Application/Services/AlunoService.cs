@@ -18,31 +18,31 @@ namespace GroupA.Application.Services
             _repository = repository;
         }
 
-        public Task<Aluno> CreateAluno(Aluno aluno)
+        public async Task<Aluno> CreateAluno(Aluno aluno)
         {
             aluno.CreatedAt = DateTime.Now;
 
-            return _repository.CreateAluno(aluno);
+            return await _repository.CreateAluno(aluno);
         }
 
-        public Task DeleteAlunoById(int alunoId)
+        public async Task DeleteAlunoById(int alunoId)
         {
-            return _repository.DeleteAlunoById(alunoId);
+            await _repository.DeleteAlunoById(alunoId);
         }
 
-        public Task<Aluno> GetAlunoById(int alunoId)
+        public async Task<Aluno> GetAlunoById(int alunoId)
         {
-            return _repository.GetAlunoById(alunoId);
+            return await _repository.GetAlunoById(alunoId);
         }
 
-        public Task<List<Aluno>> GetAlunos()
+        public async Task<List<Aluno>> GetAlunos()
         {
-            return _repository.GetAlunos();
+            return await _repository.GetAlunos();
         }
 
-        public Task<Aluno> UpdateAluno(int alunoId, Aluno aluno)
+        public async Task<Aluno> UpdateAluno(int alunoId, Aluno aluno)
         {
-            return _repository.UpdateAluno(alunoId, aluno);
+            return await _repository.UpdateAluno(alunoId, aluno);
         }
     }
 }
